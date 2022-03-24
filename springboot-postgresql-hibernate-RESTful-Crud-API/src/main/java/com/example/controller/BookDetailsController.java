@@ -76,7 +76,7 @@ public class BookDetailsController {
 //        return this.bookDetailsRepository.findAll();
 //    }
 
-    @PostMapping("/createbook")
+    @PostMapping("/createbook") //creates book
     public void createBook(@RequestBody BookDetails book) {
 
         this.bookDetailsRepository.save(book);
